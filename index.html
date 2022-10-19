@@ -5,7 +5,7 @@
 <!--[if gt IE 8]>     this too works i guess <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-
+        
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -39,7 +39,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     console.log("works")
                 function runme()
                 {
-                    console.log(i)
+                    dataLayer.push({
+
+                        event:"Button clicked event this is a custom one",
+                        Id:"777"
+                    })
                 }
 
 
