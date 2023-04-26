@@ -34,11 +34,11 @@
                     console.log("works")
                 function runme()
                 {
-                    dataLayer.push({
-
-                        event:"Button clicked event this is a custom one",
-                        Id:"777"
-                    })
+                    analytics.track("Order Completed"{
+                                    "purchased":"yes"
+                                    
+                                    })
+                   
                 }
 
 
